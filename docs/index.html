@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI Text Summarizer App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 font-sans text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md">
+      <div class="container mx-auto flex items-center justify-between py-4 px-6">
+        <!-- Logo -->
+        <div class="flex items-center space-x-4">
+          <img src="images/assertion-cZCoDy15QXuDDgFbNBt1-g.png" alt="Logo" class="h-10 w-10">
+          <span class="text-xl font-bold text-blue-600">AI Summarizer App</span>
+        </div>
+        <!-- Title -->
+        <div>
+          <span class="text-lg font-medium text-gray-700">Postman Student Expert Program</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <h1 class="text-4xl font-bold text-center text-blue-600 mt-8">Text Summarizer App</h1>
+    <p class="text-center mt-4 px-4">
+      <strong>"Welcome to KC's Text Summarizer App"</strong> – Unleash the Power of AI for Instant Summaries! Unlock the magic of cutting-edge Artificial Intelligence APIs with our one-of-a-kind app that delivers crisp and engaging summaries from lengthy documents. Whether you're dealing with extensive assignments of your college, intricate research papers, or any other text, our app is your secret weapon for lightning-fast summarization. Make your content stand out with our innovative solution, and transform the way you share information on your website!
+    </p>
+    <p class="text-center mt-4 px-4">
+      <strong>"Effortless Summarization at Your Fingertips!"</strong> Just paste your text into the text area below, and with a single click of the "Summarize" button, watch the magic happen.
+    </p>
+    <div class="container flex flex-col items-center mt-8 space-y-6">
+      <div class="text-box bg-white p-6 rounded-lg shadow-lg w-full max-w-3xl">
+        <textarea 
+          id="text_to_summarize" 
+          name="text_to_summarize" 
+          placeholder="Paste your text for summarization here. (Minimum length: 200 characters. Maximum length: 100,000 characters.) Let the summarizing begin!" 
+          maxlength="100000" 
+          class="w-full h-40 p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500"
+        ></textarea>
+        <button 
+          id="submit-button" 
+          class="submit-button mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-all"
+        >
+          <span class="submit-button-text">Summarize</span>
+        </button>
+      </div>
+      <div class="text-box bg-white p-6 rounded-lg shadow-lg w-full max-w-3xl"> 
+        <textarea 
+          id="summary" 
+          name="summarized_text" 
+          placeholder="Summarized text will appear here" 
+          class="w-full h-40 p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500"
+        ></textarea>
+      </div>
+    </div>
+    <section class="cta-section bg-blue-100 py-10 mt-12">
+      <div class="cta-content flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-6">
+        <div class="cta-text text-center md:text-left max-w-xl">
+          <h2 class="text-2xl font-bold text-white-700">Curious how to build this app?</h2>
+          <p class="mt-4 text-black-700">
+            "Boost Your Career with Postman's Student Program! 🚀 Enroll now to supercharge your software development and API expertise. Elevate your skills and pave the way for a successful career journey!"
+          </p>
+          <a 
+            href="https://www.postman.com/student-program/student-expert/?utm_campaign=CGC&utm_medium=referral&utm_source=internal&utm_term=pbl-skilljar&utm_content=pbl_summariser_app" 
+            class="cta-button inline-block mt-6 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-all" 
+            target="_blank" 
+            rel="noopener nofollow"
+          >
+            Register as student 😎
+          </a>
+        </div>
+        <img src="images/learning.png" class="max-w-xs shadow-md rounded-lg" alt="Learning Image">
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
